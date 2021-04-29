@@ -40,7 +40,7 @@ functions
 def playgame(word_to_guess):
 	#init fresh game
 	masked_word = str("*"*len(word_to_guess))
-	life_counter = 10
+	life_counter = 9
 	guessed = []
 	tmp_msg = "Good luck !" #empty for first run
 	while life_counter != 0:
@@ -75,6 +75,11 @@ def playgame(word_to_guess):
 			if masked_word == word_to_guess:
 				print("The word is: {} !!!".format(word_to_guess))
 				return "GG" #game is won
+	#game is lost printing last output
+	system("clear") #clear the screen
+	print(banner) #print banner
+	print(game_visuals[life_counter])
+	print("The word to guess was: {}".format(word_to_guess))
 	return "FF"
 
 '''
