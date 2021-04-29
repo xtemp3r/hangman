@@ -9,4 +9,4 @@ before_script:
   - docker build -t pro1 .
 
 script:
-  - docker run -it pro1
+  - docker run -it pro1 travis
