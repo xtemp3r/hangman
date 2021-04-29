@@ -2,7 +2,7 @@
 ## _PRO1 - seminarska naloga_
 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.com/xtemp3r/hangman.svg?token=ph3uoqDz9qkCKaARptfe&branch=main)](https://travis-ci.com/xtemp3r/hangman)
 
 ## Description:
 
