@@ -1,17 +1,6 @@
-'''
-Version: Alpha_001
-created by: xtemp3r
-
-instructions:
- - create list of 50 words
- - pick 1 random word at beginning
- - print " * length of random word
- - let player try until out of lifes or found the word completly
- - if wrong char draw new line in ascii art hangman -1 lifecounter
- - if char right replace " with the correct char
- - create main menu for newgame or exit game
-'''
-
+#Hangman
+#Version: Beta
+#created by: xtemp3r
 import sys
 from os import system
 import random
@@ -49,11 +38,6 @@ with open(wordlist_file, "r") as f:
 functions
 '''
 def playgame(word_to_guess):
-	'''
-	- refresh lifecounter to 10
-	- guessing_word = " * length of word_to_guess
-	- 
-	'''
 	#init fresh game
 	masked_word = str("*"*len(word_to_guess))
 	life_counter = 10
@@ -63,7 +47,7 @@ def playgame(word_to_guess):
 		system("clear") #clear the screen
 		print(banner) #print banner
 		print(game_visuals[life_counter])
-		print("[DEBUG]: Word to guess: "+word_to_guess)
+		#print("[DEBUG]: Word to guess: "+word_to_guess)
 		print("[INFO]: " + tmp_msg)
 		print("[LIFE]: " + str(life_counter))
 		print(masked_word)
@@ -92,8 +76,6 @@ def playgame(word_to_guess):
 				print("The word is: {} !!!".format(word_to_guess))
 				return "GG" #game is won
 	return "FF"
-				
-
 
 '''
 main menu
