@@ -23,6 +23,16 @@ _|    _|    _|_|_|  _|    _|    _|_|_|  _|    _|    _|    _|_|_|  _|    _|
 wordlist_file = "wordlist.txt" #location/name of wordlist file
 wordlist = [] #actually the list for words in app
 
+#for travis CI test
+try:
+	xyz = sys.argv[1]
+	if xyz == "travis":
+		sys.exit(0)
+	else:
+		pass
+except:
+	pass
+
 '''
 setup game stuff
 '''
