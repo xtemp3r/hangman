@@ -71,6 +71,10 @@ def playgame(word_to_guess):
 		#eval input
 		if usr_guess in guessed:
 			tmp_msg = ("You already tried this")
+		elif usr_guess == word_to_guess:
+			#direct win !
+			print("The word is: {} !!!".format(word_to_guess))
+			return "GG"
 		elif len(usr_guess) != 1:
 			tmp_msg = ("Length not 1")
 		else:
