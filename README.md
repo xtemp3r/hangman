@@ -1,5 +1,5 @@
 # Hangman
-## _PRO1 - seminarska naloga_
+## _PRO2 - seminarska naloga_
 
 
 [![Build Status](https://travis-ci.com/xtemp3r/hangman.svg?token=ph3uoqDz9qkCKaARptfe&branch=main)](https://travis-ci.com/xtemp3r/hangman)
@@ -30,13 +30,18 @@ Build and run the docker container.
 
 ```sh
 cd hangman/
-docker build -t pro1 .
-docker run -it pro1
+docker build -t pro2 .
+docker run -it pro2
 ```
 
 Run the python script without docker.
 
 ```sh
 cd hangman/app/
+pip install -r requirements.txt
 python3 hangman.py
 ```
+
+##Usage/Play
+
+To play the game just open your web broswer and go to: http://localhost:5000
